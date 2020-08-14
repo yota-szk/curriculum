@@ -13,23 +13,21 @@ public class Main {
       //   firstNameには自分の名前、lastNameには自分の名字で初期化しなさい
     	String firstName = "Yota" ;
     	String lastName = "Suzuki";
-    	
-    			
-    	
+
+
+
         //getName関数の呼び出しと出力
         System.out.println(getName(firstName, lastName));
         System.out.println();
-        
+
         int[] arr = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-        
+
         //③ arr 配列をループさせ、isOdd関数を使って配列の要素が奇数かどうかの判定を行いなさい。
         //   要素が奇数の場合には「nは奇数です。」と出力されます。
-        for (int i = 0; i < arr.length; i++) { 
-        	if (i % 2 != 0)
-        		System.out.println( i + "は奇数です");
-        		
+        for (int i = 0; i < arr.length; i++) {
+        	isOdd(i);
         	}
-        
+
     }
     //② 関数を定義しなさい。
     //   関数名：getName
@@ -39,8 +37,8 @@ public class Main {
     public static String getName(String firstName , String lastName) {
     	return firstName + lastName ;
     }
-    
-    
+
+
     //奇数の判定を行う。
     public static void isOdd(int num) {
       if(num % 2 != 0) {
