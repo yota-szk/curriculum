@@ -13,8 +13,8 @@ public class Task extends Calculator {
 
 
 
-    	System.out.println("plusメソッドが一つの場合:" + plus(10));
-    	System.out.println("plusメソッドが二つの場合:" + plus(11, 19));
-    	System.out.println("plusメソッドが三つの場合:" + plus(11, 19, 30));
+    	System.out.println("plusメソッドが一つの場合:" + super.plus(10));
+    	System.out.println("plusメソッドが二つの場合:" + super.plus(11, 19));
+    	System.out.println("plusメソッドが三つの場合:" + super.plus(11, 19, 30));
     }
 }
