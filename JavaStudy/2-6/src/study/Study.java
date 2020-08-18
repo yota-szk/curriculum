@@ -1,6 +1,5 @@
 package study;
 
-import java.time.Year;
 import java.util.Calendar;
 import java.util.Date;
 
@@ -31,8 +30,8 @@ public class Study {
         /*Calendar.MONTH は
         JANUARY(実値=0)〜UNDECIMBER(実値=11) まで定義が存在し、
         実際の月の値は、「-1」の値を保持しているため、
-        上記では「+1」することで実際に表示される月の値を調整しています。
-        あくまで「月の値 + 1」であるため、「13月、14月、15月」という表示になってしまう*/
+        上記では「+1」することで実際に表示される月の値を調整している。。
+        あくまで「月の値 + 1」であるため、「13月、14月、15月」という表示になってしまう可能性がある。*/
         System.out.println(calendar.get(Calendar.YEAR));
         System.out.println(calendar.get(Calendar.MONTH) + 1);
         System.out.println(calendar.get(Calendar.DATE));
@@ -46,12 +45,11 @@ public class Study {
         System.out.println(calendar.get(Calendar.MONTH));
         System.out.println(calendar.get(Calendar.DATE));
 
-
-
-
-
         // うるう年判定
         printLeapYear(calendar.get(Calendar.YEAR));
+
+
+
     }
 
     /**
@@ -59,7 +57,19 @@ public class Study {
      * 問③で日付がズレる可能性があるため補足として出力
      * @param year
      */
-    private static void printLeapYear(final int year) {
-        System.out.println(year + "年は、うるう年" + (Year.isLeap(year) ? "です。" : "ではありません。"));
+    public static void printLeapYear(final int year) {
+        boolean isLeapYear = false;
+        if (year % 4 == 0) {
+            if ((year % 100) == 0) {
+                isLeapYear = ((year % 400) == 0);
+            } else {
+                isLeapYear = true;
+            }
+        }
+        System.out.println(year + "年はうるう年" + (isLeapYear ? "です。" : "ではありません。"));
     }
+
+
+
+
 }
