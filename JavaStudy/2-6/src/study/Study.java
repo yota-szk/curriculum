@@ -42,7 +42,7 @@ public class Study {
         calendar.add(Calendar.MONTH, 2);
         calendar.add(Calendar.DATE, 15);
         System.out.println(calendar.get(Calendar.YEAR));
-        System.out.println(calendar.get(Calendar.MONTH));
+        System.out.println(calendar.get(Calendar.MONTH) + 1);
         System.out.println(calendar.get(Calendar.DATE));
 
         // うるう年判定
@@ -68,8 +68,5 @@ public class Study {
         }
         System.out.println(year + "年はうるう年" + (isLeapYear ? "です。" : "ではありません。"));
     }
-
-
-
 
 }
