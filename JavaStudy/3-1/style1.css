@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+.clearfix::after {
+content: “”;
+display: block;
+clear: both;
+}
+
+.wrapper {
+  width:400px;
+  height:450px;
+  margin:0px auto;
+}
+
+.header {
+  width:400px;
+  height:100px;
+  background-color:#141f40;
+}
+
+.main {
+  height:250px;
+}
+
+.left {
+  float:left;
+  width:150px;
+  height:250px;
+  background-color:#80bfa8;
+}
+
+
+.right {
+  float:right;
+  width:250px;
+  height:250px;
+  background-color:#8c2727;
+}
+
+.footer {
+  height:100px;
+  width:400px;
+  background-color:#d98d30;
+}

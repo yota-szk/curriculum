@@ -1,0 +1,33 @@
+@media screen and (max-width: 767px) {
+  .wrapper {
+    width:250px;
+  }
+
+  .header {
+    width:250px;
+  }
+
+  .right {
+    width:100px;
+  }
+
+  .footer {
+    width:250px;
+  }
+}
+
+
+
+@media screen and (max-width: 479px) {
+  .wrapper,.header,.left,.right,.footer{
+    width:150px;
+  }
+
+  .main {
+    height:500px;
+  }
+
+  .left,.right {
+  float: none;
+  }
+}
