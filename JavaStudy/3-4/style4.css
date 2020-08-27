@@ -1,0 +1,64 @@
+@@charset "UTF-8";
+
+.clearfix::after {
+content: “”;
+display: block;
+clear: both;}
+
+.wrapper {
+  margin:0 auto;
+  width:350px;
+  height:350px;}
+
+.wrapper-l {
+  width:150px;
+  height:350px;
+  float:left;}
+
+.wrapper-r {
+  width:200px;
+  height:350px;
+  float:left;}
+
+.head {
+  height:100px;}
+
+.main {
+  height:150PX;}
+
+.foot {
+  height:100px;}
+
+.mains {
+  width:100px;
+  height:150PX;
+  float:left;}
+
+.foots {
+  width:100px;
+  height:100PX;
+  float:left;}
+
+.l-head {
+  background-color:#FFFF66;}
+
+.l-main {
+  background-color:#FF3333;}
+
+.l-foot {
+  background-color:#FF9966;}
+
+.r-head {
+  background-color:#666666;}
+
+.main-1 {
+  background-color:#3366FF;}
+
+.main-2 {
+  background-color:#669933;}
+
+.foot-1 {
+  background-color:#FFFFCC;}
+
+.foot-2 {
+  background-color:#330066;}
